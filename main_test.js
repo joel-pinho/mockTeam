@@ -7,6 +7,7 @@ console.log("O conteúdo do ficheiro é:");
 console.log(data.toString());
 console.log("Ficheiro" + " input.txt" + " lido!");
 
+
     */
 
 var data = fs.readFile("./data/input.txt", function(err, data){
