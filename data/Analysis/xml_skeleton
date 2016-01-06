@@ -1,0 +1,58 @@
+SoccerFeed
+	SoccerDocument
+		Competition
+		   -Country
+		   -Name
+		    Round
+			Name
+			Pool
+			RoundNumber
+		    -Stat
+		    -Stat
+		    -Stat
+		    -Stat		
+		MatchData
+		   MatchInfo
+		      Date
+		   MatchOfficial
+		      OfficialData
+		         -OfficialRef
+		      OfficialName
+		         -First
+			 -Last
+		      -Stat
+		      -Stat
+		      -Stat
+		      -Stat
+		      -Stat
+		   TeamData
+		      Goal (*0..n ocorrências)
+		      PlayerLineUp
+			MatchPlayer (*20 ocorrências, das quais 11 titulares e 9 suplentes
+			-Stat (*n ocorrências: assumir as do ficheiro original ou sacar todas)
+			-Substitution (*0..n ocorrências)
+		Team
+		   -Country
+		   -Name
+		    Player (*20 ocorrências)
+		      PersonName
+			-First
+			-Last
+		   -TeamOfficial
+			-First
+			-Last
+		Team
+		   -Country
+		   -Name
+		    Player (*20 ocorrências)
+		      PersonName
+			-First
+			-Known (*facultativo)
+			-Last
+		   -TeamOfficial
+			-First
+			-Last
+		Venue
+		   Country
+		      -Country
+		      -Name
